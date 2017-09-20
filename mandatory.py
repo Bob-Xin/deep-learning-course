@@ -40,3 +40,14 @@ print (frequencylist)
 for i in frequencylist:
     print (dictionaryword[i], "->", i)
 #manually check
+# 的人 -> 921
+# 他的 -> 503
+# 自己的 -> 479
+# 上的 -> 355
+# 他们的 -> 334
+# 人的 -> 293
+# 的时候 -> 261
+# 就会 -> 225
+# 的东西 -> 207
+# 都是 -> 206
+
