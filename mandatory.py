@@ -25,6 +25,8 @@ fdist = nltk.FreqDist(twowordslist)
 #make a dictionary which stores frequency as key, combined words as value
 dictionaryword = {}
 for word in fdist:
+    if '，'  in word or '。' in word or '――' in word:
+        continue  #first remove “，”，“。”
     dictionaryword[fdist[word]] = word
 #check what it looks like
 print (dictionaryword)
@@ -39,7 +41,8 @@ print (frequencylist)
 #print out the combined word and its correspond frequency by line
 for i in frequencylist:
     print (dictionaryword[i], "->", i)
-#manually check
+
+# top 10:
 # 的人 -> 921
 # 他的 -> 503
 # 自己的 -> 479
