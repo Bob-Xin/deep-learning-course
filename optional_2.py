@@ -4,6 +4,7 @@ mean = 0
 sd = 1
 
 a = np.random.normal(mean, sd, 100)
+a[a<0] = 0
 print (a)
 
 #result
